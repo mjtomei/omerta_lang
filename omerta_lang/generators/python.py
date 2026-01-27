@@ -541,8 +541,8 @@ class ASTTranslator:
 
 
 def load_transaction(tx_dir: Path) -> Schema:
-    """Load transaction definition from directory (DSL .omt file)."""
-    from dsl_validate import validate_and_report
+    """Load transaction definition from directory (.omt file)."""
+    from ..validate import validate_and_report
 
     dsl_path = tx_dir / "transaction.omt"
     if dsl_path.exists():
