@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "omerta_lang"
+version = "0.1.0"
+description = "Transaction protocol language toolchain for Omerta"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+dependencies = [
+    "lark>=1.1.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+]
+graphs = [
+    "graphviz>=0.20",
+]
+
+[project.scripts]
+omerta-lint = "omerta_lang.cli.lint:main"
+omerta-generate = "omerta_lang.cli.generate:main"
+omerta-regenerate = "omerta_lang.cli.regenerate:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+
+[tool.setuptools.package-data]
+omerta_lang = ["grammar.lark"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
