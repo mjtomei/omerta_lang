@@ -77,6 +77,25 @@ for actor in schema.actors:
 
 - `OMERTA_PROTOCOL_DIR`: Base directory for resolving imports (default: `./protocol`)
 
+## Development Status
+
+See [plans/notes.txt](../plans/notes.txt) for the latest human-managed TODO list.
+
+### Accomplished
+
+- [x] PEG-based parser using Lark for `.omt` files
+- [x] Semantic validation with typo detection and auto-fix
+- [x] Code generation for Python simulations
+- [x] Markdown documentation generation
+- [x] CLI tools: omerta-lint, omerta-generate, omerta-regenerate
+- [x] Library API for parsing and validating schemas
+
+### TODO
+
+- [ ] Walk through small examples with the formal language spec to debug
+- [ ] Support for additional code generation targets
+- [ ] Enhanced validation for complex protocol patterns
+
 ## Testing
 
 ```bash
