@@ -1,0 +1,15 @@
+name: Tests
+
+on:
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [master, main]
+
+jobs:
+  test:
+    uses: mjtomei/omerta/.github/workflows/test-python.yml@master
+    with:
+      package-path: '.'
+      package-name: 'omerta-lang'
+      test-path: 'tests/'
