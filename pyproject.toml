@@ -25,6 +25,7 @@ graphs = [
 omerta-lint = "omerta_lang.cli.lint:main"
 omerta-generate = "omerta_lang.cli.generate:main"
 omerta-regenerate = "omerta_lang.cli.regenerate:main"
+omerta-setup-hooks = "scripts.setup_hooks:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
