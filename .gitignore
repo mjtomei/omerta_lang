@@ -29,3 +29,7 @@ htmlcov/
 *.orig
 *.bak
 *.fixed-hash
+
+# Parent repo stub files (ignored when working inside cloned repo)
+.commit
+REPO.md
