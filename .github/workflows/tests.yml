@@ -14,6 +14,7 @@ concurrency:
 jobs:
   test:
     uses: mjtomei/omerta/.github/workflows/test-python.yml@master
+    secrets: inherit
     with:
       package-path: '.'
       package-name: 'omerta-lang'
