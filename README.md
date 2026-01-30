@@ -1,5 +1,7 @@
 # Omerta Language
 
+[![codecov](https://codecov.io/gh/mjtomei/omerta_lang/graph/badge.svg)](https://codecov.io/gh/mjtomei/omerta_lang)
+
 Transaction protocol language toolchain for Omerta.
 
 ## Overview
